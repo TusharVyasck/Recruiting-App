@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_visibility">
+    <par_dashboard_visibility action="INSERT_OR_UPDATE">
+        <dashboard display_value="Recruiting App">c61d07625f17bd10ed7355e05aba432c</dashboard>
+        <experience display_value="Recruiting App">061d0762f217bd1039f8ee0363a64934</experience>
+        <sys_class_name>par_dashboard_visibility</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-27 07:01:29</sys_created_on>
+        <sys_id>ca1d07626f17bd107e78d752fdd0292b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name>par_dashboard_visibility_ca1d07626f17bd107e78d752fdd0292b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-27 07:01:29</sys_updated_on>
+    </par_dashboard_visibility>
+</record_update>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>New Salary update</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Salary update</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">4b8574397d31311076daf29f52070d17</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 06:40:37</sys_created_on>
+        <sys_id>76bef9da97db3d10208cbed0f053af60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Salary update</sys_name>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name>sys_wizard_answer_76bef9da97db3d10208cbed0f053af60</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 06:40:37</sys_updated_on>
+        <table/>
+        <target_url>x_1259253_recruiti_salary_update.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

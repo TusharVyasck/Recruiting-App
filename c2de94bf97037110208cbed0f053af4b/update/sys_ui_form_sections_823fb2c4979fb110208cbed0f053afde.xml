@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="823fb2c4979fb110208cbed0f053afde" sys_domain="global" table="x_1259253_recruiti_positions" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-19 11:36:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a3fb2c4979fb110208cbed0f053afe1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1259253_recruiti_positions" name="x_1259253_recruiti_positions" sys_domain="global" view="Default view">823fb2c4979fb110208cbed0f053afde</sys_ui_form>
+            <sys_ui_section caption="Information" display_value="Information" name="x_1259253_recruiti_positions" sys_domain="global" view="Default view">3f2d2a40975fb110208cbed0f053af28</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-19 11:36:02</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-19 11:36:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>423ff2c4979fb110208cbed0f053af2d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1259253_recruiti_positions" name="x_1259253_recruiti_positions" sys_domain="global" view="Default view">823fb2c4979fb110208cbed0f053afde</sys_ui_form>
+            <sys_ui_section caption="Compensation" display_value="Compensation" name="x_1259253_recruiti_positions" sys_domain="global" view="Default view">ce3fb2c4979fb110208cbed0f053afdb</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-19 11:36:02</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-19 11:36:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>823ff2c4979fb110208cbed0f053af31</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1259253_recruiti_positions" name="x_1259253_recruiti_positions" sys_domain="global" view="Default view">823fb2c4979fb110208cbed0f053afde</sys_ui_form>
+            <sys_ui_section caption="Description" display_value="Description" name="x_1259253_recruiti_positions" sys_domain="global" view="Default view">8e3fb2c4979fb110208cbed0f053afdc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-19 11:36:03</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-19 11:36:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>023ff2c4979fb110208cbed0f053af35</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1259253_recruiti_positions" name="x_1259253_recruiti_positions" sys_domain="global" view="Default view">823fb2c4979fb110208cbed0f053afde</sys_ui_form>
+            <sys_ui_section caption="Required Languages" display_value="Required Languages" name="x_1259253_recruiti_positions" sys_domain="global" view="Default view">4a3fb2c4979fb110208cbed0f053afdd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-19 11:36:03</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1259253_recruiti_positions</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-19 11:36:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>823fb2c4979fb110208cbed0f053afde</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1259253_recruiti_positions</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+            <sys_update_name>sys_ui_form_sections_823fb2c4979fb110208cbed0f053afde</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-19 11:36:02</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

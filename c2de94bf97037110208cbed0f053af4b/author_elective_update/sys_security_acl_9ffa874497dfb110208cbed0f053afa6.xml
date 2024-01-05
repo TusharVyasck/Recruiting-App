@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description/>
+        <name>x_1259253_recruiti_test</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-19 12:27:27</sys_created_on>
+        <sys_id>9ffa874497dfb110208cbed0f053afa6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1259253_recruiti_test</sys_name>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name>sys_security_acl_9ffa874497dfb110208cbed0f053afa6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-19 12:27:27</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</application>
+        <file_path/>
+        <instance_id>74db336fdb0fe1d42f082a5913961901</instance_id>
+        <instance_name>dev175393</instance_name>
+        <name>sys_security_acl_9ffa874497dfb110208cbed0f053afa6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description/><name>x_1259253_recruiti_test</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-12-19 12:27:27</sys_created_on><sys_id>9ffa874497dfb110208cbed0f053afa6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1259253_recruiti_test</sys_name><sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package><sys_policy/><sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope><sys_update_name>sys_security_acl_9ffa874497dfb110208cbed0f053afa6</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-12-19 12:27:27</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-594894428</payload_hash>
+        <record_name>x_1259253_recruiti_test</record_name>
+        <reverted_from/>
+        <source>96de98bf97037110208cbed0f053af0f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-19 12:27:27</sys_created_on>
+        <sys_id>dbfa874497dfb110208cbed0f053afab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c820b9ad90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-19 12:27:27</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>dffa874455dfb110d3a5018cd34b6faa</update_guid>
+        <update_guid_history>dffa874455dfb110d3a5018cd34b6faa:-594894428</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-20 04:10:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>af1961cbb8784d00824a418803e84000</sys_id>
+        <sys_metadata>9ffa874497dfb110208cbed0f053afa6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1259253_recruiti_test</sys_name>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_parent display_value="">bdfa074497dfb110208cbed0f053afd9</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_scope_delete display_value="">13b3b22bbb8e465a8f9281bbf0d1b324</sys_scope_delete>
+        <sys_update_name>sys_security_acl_9ffa874497dfb110208cbed0f053afa6</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_9ffa874497dfb110208cbed0f053afa6">dbfa874497dfb110208cbed0f053afab</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-20 04:10:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

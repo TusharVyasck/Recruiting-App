@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="15b64141979fb510208cbed0f053af30" label="Employee" max_length="40" name="x_1259253_recruiti_employee" text_index="true" type="collection">
+        <element label="Email" mandatory="true" max_length="40" name="email" type="string"/>
+        <element label="Employee Name" max_length="40" name="employee_name" type="string"/>
+        <element label="Employer Number" mandatory="true" max_length="32" name="employer_number" reference="x_1259253_recruiti_employer" reference_cascade_rule="cascade" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Employee Number" mandatory="true" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Salary" max_length="40" name="salary" type="integer"/>
+        <index name="index">
+            <element name="employer_number"/>
+        </index>
+    </element>
+</database>

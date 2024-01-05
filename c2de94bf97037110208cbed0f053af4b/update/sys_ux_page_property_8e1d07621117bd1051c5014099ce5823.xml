@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Tabs Configuration</description>
+        <name>chrome_tab</name>
+        <page display_value="Recruiting App">061d0762f217bd1039f8ee0363a64934</page>
+        <required_translations>[ {
+  "message" : "New Candidate",
+  "comment" : ""
+}, {
+  "message" : "New Employee",
+  "comment" : ""
+}, {
+  "message" : "New Employer",
+  "comment" : ""
+}, {
+  "message" : "New Employment Website",
+  "comment" : ""
+}, {
+  "message" : "New Job Application",
+  "comment" : ""
+}, {
+  "message" : "New Job Posting",
+  "comment" : ""
+}, {
+  "message" : "New Positions",
+  "comment" : ""
+}, {
+  "message" : "New Review",
+  "comment" : ""
+}, {
+  "message" : "New Salary update",
+  "comment" : ""
+} ]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-27 07:01:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>8e1d07621117bd1051c5014099ce5823</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>chrome_tab</sys_name>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name>sys_ux_page_property_8e1d07621117bd1051c5014099ce5823</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-27 07:01:46</sys_updated_on>
+        <type>json</type>
+        <unique_name>x_1259253_recruiti.061d0762f217bd1039f8ee0363a64934.root.chrome_tab</unique_name>
+        <value>{"contextual":["record"],"newTabMenu":[{"label":{"translatable":true,"message":"New Job Application"},"routeInfo":{"route":"record","fields":{"table":"x_1259253_recruiti_job_application","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1259253_recruiti_job_application","canCreate":true}}},{"label":{"translatable":true,"message":"New Review"},"routeInfo":{"route":"record","fields":{"table":"x_1259253_recruiti_review","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1259253_recruiti_review","canCreate":true}}},{"label":{"translatable":true,"message":"New Employee"},"routeInfo":{"route":"record","fields":{"table":"x_1259253_recruiti_employee","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1259253_recruiti_employee","canCreate":true}}},{"label":{"translatable":true,"message":"New Employment Website"},"routeInfo":{"route":"record","fields":{"table":"x_1259253_recruiti_employment_website","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1259253_recruiti_employment_website","canCreate":true}}},{"label":{"translatable":true,"message":"New Job Posting"},"routeInfo":{"route":"record","fields":{"table":"x_1259253_recruiti_job_posting","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1259253_recruiti_job_posting","canCreate":true}}},{"label":{"translatable":true,"message":"New Employer"},"routeInfo":{"route":"record","fields":{"table":"x_1259253_recruiti_employer","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1259253_recruiti_employer","canCreate":true}}},{"label":{"translatable":true,"message":"New Salary update"},"routeInfo":{"route":"record","fields":{"table":"x_1259253_recruiti_salary_update","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1259253_recruiti_salary_update","canCreate":true}}},{"label":{"translatable":true,"message":"New Candidate"},"routeInfo":{"route":"record","fields":{"table":"x_1259253_recruiti_candidate","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1259253_recruiti_candidate","canCreate":true}}},{"label":{"translatable":true,"message":"New Positions"},"routeInfo":{"route":"record","fields":{"table":"x_1259253_recruiti_positions","sysId":"-1"},"multiInstField":"sysId"},"condition":{"tableDescription":{"table":"x_1259253_recruiti_positions","canCreate":true}}}],"maxMainTabLimit":10,"maxTotalSubTabLimit":30}</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=8e1d07621117bd1051c5014099ce5823"/>
+</record_update>

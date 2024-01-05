@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a70de640975fb110208cbed0f053af84" label="Positions" max_length="40" name="x_1259253_recruiti_positions" text_index="true" type="collection">
+        <element label="Apex" max_length="40" name="apex" type="boolean"/>
+        <element label="Closed Date" max_length="40" name="closed_dae" type="glide_date"/>
+        <element label="C#" max_length="255" name="csharp" type="boolean"/>
+        <element label="Educational Requirements" max_length="40" name="educational_requirements" type="string"/>
+        <element choice="3" default="information_technology" label="Functional Area" max_length="40" name="functional_area" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Finance" sequence="0" value="finance"/>
+                <element inactive_on_update="false" label="Human Resources" sequence="1" value="human_resources"/>
+                <element inactive_on_update="false" label="Information Technology" sequence="2" value="information_technology"/>
+                <element inactive_on_update="false" label="Retail Operations" sequence="3" value="retail_operations"/>
+                <element inactive_on_update="false" label="Warehousing" sequence="4" value="warehousing"/>
+                <element inactive_on_update="false" label="Miscellaneous" sequence="5" value="miscellaneous"/>
+            </choice>
+        </element>
+        <element label="Hire By" max_length="40" name="hire_by" type="glide_date"/>
+        <element label="Java" max_length="40" name="java" type="boolean"/>
+        <element label="Javascript" max_length="40" name="javascript" type="boolean"/>
+        <element label="Job Description" max_length="400" name="job_description" type="string"/>
+        <element choice="3" default="fn_100" label="Job Level" max_length="40" name="job_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="FN-100" sequence="0" value="fn_100"/>
+                <element inactive_on_update="false" label="FN-200" sequence="1" value="fn_200"/>
+                <element inactive_on_update="false" label="FN-300" sequence="2" value="fn_300"/>
+                <element inactive_on_update="false" label="FN-400" sequence="3" value="fn_400"/>
+                <element inactive_on_update="false" label="HR-100" sequence="4" value="hr_100"/>
+                <element inactive_on_update="false" label="HR-200" sequence="5" value="hr_200"/>
+                <element inactive_on_update="false" label="HR-300" sequence="6" value="hr_300"/>
+                <element inactive_on_update="false" label="HR-400" sequence="7" value="hr_400"/>
+                <element inactive_on_update="false" label="IT-100" sequence="8" value="it_100"/>
+                <element inactive_on_update="false" label="IT-200" sequence="9" value="it_200"/>
+                <element inactive_on_update="false" label="IT-300" sequence="10" value="it_300"/>
+                <element inactive_on_update="false" label="IT-400" sequence="11" value="it_400"/>
+                <element inactive_on_update="false" label="RO-100" sequence="12" value="ro_100"/>
+                <element inactive_on_update="false" label="RO-200" sequence="13" value="ro_200"/>
+                <element inactive_on_update="false" label="RO-300" sequence="14" value="ro_300"/>
+                <element inactive_on_update="false" label="RO-400" sequence="15" value="ro_400"/>
+                <element inactive_on_update="false" label="WH-100" sequence="16" value="wh_100"/>
+                <element inactive_on_update="false" label="WH-200" sequence="17" value="wh_200"/>
+                <element inactive_on_update="false" label="WH-300" sequence="18" value="wh_300"/>
+                <element inactive_on_update="false" label="WH-400" sequence="19" value="wh_400"/>
+                <element inactive_on_update="false" label="MC-100" sequence="20" value="mc_100"/>
+                <element inactive_on_update="false" label="MC-200" sequence="21" value="mc_200"/>
+                <element inactive_on_update="false" label="MC-300" sequence="22" value="mc_300"/>
+                <element inactive_on_update="false" label="MC-400" sequence="23" value="mc_400"/>
+            </choice>
+        </element>
+        <element choice="3" default="mumbai_india" label="Location" max_length="40" name="location" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Austin, TX" sequence="0" value="austin_tx"/>
+                <element inactive_on_update="false" label="Boulder, CO" sequence="1" value="boulder_co"/>
+                <element inactive_on_update="false" label="London, England" sequence="2" value="london_england"/>
+                <element inactive_on_update="false" label="New York, NY" sequence="3" value="new_york_ny"/>
+                <element inactive_on_update="false" label="Mumbai, India" sequence="4" value="mumbai_india"/>
+                <element inactive_on_update="false" label="Sydney, Australia" sequence="5" value="sydney_australia"/>
+                <element inactive_on_update="false" label="Tokyo, Japan" sequence="6" value="tokyo_japan"/>
+            </choice>
+        </element>
+        <element label="Max Pay" mandatory="true" max_length="38" name="max_pay" type="currency"/>
+        <element label="Min Pay" mandatory="true" max_length="38" name="min_pay" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Position Number" mandatory="true" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Open Date" max_length="40" name="open_date" type="glide_date"/>
+        <element display="true" label="Position Title" mandatory="true" max_length="40" name="position_title" type="string"/>
+        <element label="Responsiblities" max_length="400" name="responsiblities" type="string"/>
+        <element label="Skills Required" max_length="400" name="skills_required" type="string"/>
+        <element choice="3" default="new_position" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pending Approval" sequence="0" value="pending_approval"/>
+                <element inactive_on_update="false" label="Open-Approved" sequence="1" value="open_approved"/>
+                <element inactive_on_update="false" label="Closed-Filled" sequence="2" value="closed_filled"/>
+                <element inactive_on_update="false" label="Closed-Not Approved" sequence="3" value="closed_not_approved"/>
+                <element inactive_on_update="false" label="Closed-Cancelled" sequence="4" value="closed_cancelled"/>
+                <element inactive_on_update="false" label="New Position" sequence="5" value="new_position"/>
+            </choice>
+        </element>
+        <element label="Travel Required" max_length="40" name="travel_required" type="boolean"/>
+        <element choice="3" default="full_time" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Full Time" sequence="0" value="full_time"/>
+                <element inactive_on_update="false" label="Part Time" sequence="1" value="part_time"/>
+                <element inactive_on_update="false" label="Internship" sequence="2" value="internship"/>
+                <element inactive_on_update="false" label="Contractor" sequence="3" value="contractor"/>
+            </choice>
+        </element>
+    </element>
+</database>

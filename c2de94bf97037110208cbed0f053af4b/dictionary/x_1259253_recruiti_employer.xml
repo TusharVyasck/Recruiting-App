@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="22bd7885975fb510208cbed0f053afd8" label="Employer" max_length="40" name="x_1259253_recruiti_employer" text_index="true" type="collection">
+        <element label="Company" max_length="40" name="company" type="string"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Employer Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element default="0" label="Sum of Salaries" max_length="40" name="sum_of_salaries" type="integer"/>
+    </element>
+</database>
