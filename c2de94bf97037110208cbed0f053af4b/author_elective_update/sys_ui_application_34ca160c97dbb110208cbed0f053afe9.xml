@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="DELETE">
+        <active>true</active>
+        <hint/>
+        <name>ghujhgfcgh</name>
+        <order/>
+        <roles>x_1259253_recruiti.ghujhgfcgh_user</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-19 08:56:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>34ca160c97dbb110208cbed0f053afe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ghujhgfcgh</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name>sys_ui_application_34ca160c97dbb110208cbed0f053afe9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-19 08:56:46</sys_updated_on>
+    </sys_ui_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</application>
+        <file_path/>
+        <instance_id>74db336fdb0fe1d42f082a5913961901</instance_id>
+        <instance_name>dev175393</instance_name>
+        <name>sys_ui_application_34ca160c97dbb110208cbed0f053afe9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_application"><sys_ui_application action="INSERT_OR_UPDATE"><active>true</active><hint/><name>ghujhgfcgh</name><order/><roles>x_1259253_recruiti.ghujhgfcgh_user</roles><sys_class_name>sys_ui_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-12-19 08:56:46</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>34ca160c97dbb110208cbed0f053afe9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ghujhgfcgh</sys_name><sys_overrides/><sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package><sys_policy/><sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope><sys_update_name>sys_ui_application_34ca160c97dbb110208cbed0f053afe9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-12-19 08:56:46</sys_updated_on></sys_ui_application></record_update>]]></payload>
+        <payload_hash>-509422967</payload_hash>
+        <record_name>ghujhgfcgh</record_name>
+        <reverted_from/>
+        <source>96de98bf97037110208cbed0f053af0f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-19 08:56:46</sys_created_on>
+        <sys_id>b0ca160c97dbb110208cbed0f053afec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c814ab53e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-19 08:56:46</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>b4ca160c6ddbb110a7203f65093c51eb</update_guid>
+        <update_guid_history>b4ca160c6ddbb110a7203f65093c51eb:-509422967</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-19 10:12:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_application">sys_ui_application</sys_db_object>
+        <sys_id>3fb0efc4d30b4f90a4661c50a721f904</sys_id>
+        <sys_metadata>34ca160c97dbb110208cbed0f053afe9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ghujhgfcgh</sys_name>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_scope_delete display_value="">13b3b22bbb8e465a8f9281bbf0d1b324</sys_scope_delete>
+        <sys_update_name>sys_ui_application_34ca160c97dbb110208cbed0f053afe9</sys_update_name>
+        <sys_update_version display_value="sys_ui_application_34ca160c97dbb110208cbed0f053afe9">b0ca160c97dbb110208cbed0f053afec</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-19 10:12:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

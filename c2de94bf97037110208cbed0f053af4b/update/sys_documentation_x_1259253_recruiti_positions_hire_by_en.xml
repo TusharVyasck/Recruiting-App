@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="hire_by" label="Hire By" language="en" table="x_1259253_recruiti_positions">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>hire_by</element>
+            <help/>
+            <hint/>
+            <label>Hire By</label>
+            <language>en</language>
+            <name>x_1259253_recruiti_positions</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-19 11:14:23</sys_created_on>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Hire By</sys_name>
+            <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+            <sys_update_name>sys_documentation_x_1259253_recruiti_positions_hire_by_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-19 11:14:26</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

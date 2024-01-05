@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Government" section_id="33c761899713f510208cbed0f053af12" sys_domain="global" table="x_1259253_recruiti_employer" version="3" view="Government">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>company</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-22 07:49:12</sys_created_on>
+            <sys_id>d81865899713f510208cbed0f053afc8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Government" display_value="Government" name="x_1259253_recruiti_employer" sys_domain="global" view="bfc761899713f510208cbed0f053af0d">33c761899713f510208cbed0f053af12</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-22 07:49:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-22 07:49:12</sys_created_on>
+            <sys_id>d01865899713f510208cbed0f053afc9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Government" display_value="Government" name="x_1259253_recruiti_employer" sys_domain="global" view="bfc761899713f510208cbed0f053af0d">33c761899713f510208cbed0f053af12</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-22 07:49:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-22 07:49:12</sys_created_on>
+            <sys_id>d41865899713f510208cbed0f053afc9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Government" display_value="Government" name="x_1259253_recruiti_employer" sys_domain="global" view="bfc761899713f510208cbed0f053af0d">33c761899713f510208cbed0f053af12</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-22 07:49:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Government</caption>
+            <header>false</header>
+            <name>x_1259253_recruiti_employer</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-22 07:48:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>33c761899713f510208cbed0f053af12</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>x_1259253_recruiti_employer</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+            <sys_update_name>sys_ui_section_33c761899713f510208cbed0f053af12</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-22 07:49:12</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Government" name="Government">bfc761899713f510208cbed0f053af0d</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

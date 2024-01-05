@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="functional_area" table="x_1259253_recruiti_positions" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>functional_area</element>
+            <name>x_1259253_recruiti_positions</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-19 11:14:27</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>functional_area</sys_name>
+            <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+            <sys_update_name>sys_choice_x_1259253_recruiti_positions_functional_area</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-19 11:14:27</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>functional_area</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Finance</label>
+            <language>en</language>
+            <name>x_1259253_recruiti_positions</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-19 11:14:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-19 11:14:27</sys_updated_on>
+            <value>finance</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>functional_area</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Human Resources</label>
+            <language>en</language>
+            <name>x_1259253_recruiti_positions</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-19 11:14:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-19 11:14:27</sys_updated_on>
+            <value>human_resources</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>functional_area</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Information Technology</label>
+            <language>en</language>
+            <name>x_1259253_recruiti_positions</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-19 11:14:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-19 11:14:27</sys_updated_on>
+            <value>information_technology</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>functional_area</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Retail Operations</label>
+            <language>en</language>
+            <name>x_1259253_recruiti_positions</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-19 11:14:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-19 11:14:27</sys_updated_on>
+            <value>retail_operations</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>functional_area</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Warehousing</label>
+            <language>en</language>
+            <name>x_1259253_recruiti_positions</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-19 11:14:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-19 11:14:27</sys_updated_on>
+            <value>warehousing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>functional_area</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Miscellaneous</label>
+            <language>en</language>
+            <name>x_1259253_recruiti_positions</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-19 11:14:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-19 11:14:27</sys_updated_on>
+            <value>miscellaneous</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

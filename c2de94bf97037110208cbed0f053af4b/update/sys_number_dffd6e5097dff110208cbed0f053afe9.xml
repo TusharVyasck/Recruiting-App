@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_1259253_recruiti_job_application">x_1259253_recruiti_job_application</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>JOB</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-20 04:59:14</sys_created_on>
+        <sys_id>dffd6e5097dff110208cbed0f053afe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>JOB</sys_name>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name>sys_number_dffd6e5097dff110208cbed0f053afe9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-20 04:59:14</sys_updated_on>
+    </sys_number>
+</record_update>

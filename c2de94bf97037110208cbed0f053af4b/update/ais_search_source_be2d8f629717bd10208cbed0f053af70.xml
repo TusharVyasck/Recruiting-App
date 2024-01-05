@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_source">
+    <ais_search_source action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <datasource display_value="">x_1259253_recruiti_employer</datasource>
+        <name>Employer</name>
+        <sys_class_name>ais_search_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-27 07:01:48</sys_created_on>
+        <sys_id>be2d8f629717bd10208cbed0f053af70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Employer</sys_name>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name>ais_search_source_be2d8f629717bd10208cbed0f053af70</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-27 07:01:48</sys_updated_on>
+    </ais_search_source>
+</record_update>

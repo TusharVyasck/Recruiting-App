@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_list_category">
+    <sys_ux_list_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <configuration display_value="Recruiting App_menu_config">631d87629717bd10208cbed0f053af0d</configuration>
+        <description/>
+        <order>900</order>
+        <sys_class_name>sys_ux_list_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-27 07:01:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3f1d87629717bd10208cbed0f053af9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Positions</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name>sys_ux_list_category_3f1d87629717bd10208cbed0f053af9e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-27 07:01:36</sys_updated_on>
+        <title>Positions</title>
+    </sys_ux_list_category>
+</record_update>

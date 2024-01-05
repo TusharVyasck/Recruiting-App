@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1e545f9c97533510208cbed0f053af4e" label="Job Posting" max_length="40" name="x_1259253_recruiti_job_posting" text_index="true" type="collection">
+        <element label="Employment Website" max_length="32" name="employment_website" reference="x_1259253_recruiti_employment_website" reference_cascade_rule="cascade" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Job Posting Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Position Title" max_length="32" name="position_title" reference="x_1259253_recruiti_positions" reference_cascade_rule="cascade" type="reference"/>
+        <index name="index">
+            <element name="employment_website"/>
+        </index>
+        <index name="index2">
+            <element name="position_title"/>
+        </index>
+    </element>
+</database>

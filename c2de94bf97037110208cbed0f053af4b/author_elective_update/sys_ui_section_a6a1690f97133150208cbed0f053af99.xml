@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="" section_id="a6a1690f97133150208cbed0f053af99" sys_domain="global" table="x_1259253_recruiti_dnajdn" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-28 12:29:04</sys_created_on>
+            <sys_id>e2a1690f97133150208cbed0f053af9d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1259253_recruiti_dnajdn" sys_domain="global" view="Default view">a6a1690f97133150208cbed0f053af99</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-28 12:29:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption/>
+            <header>false</header>
+            <name>x_1259253_recruiti_dnajdn</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-12-28 12:29:04</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a6a1690f97133150208cbed0f053af99</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1259253_recruiti_dnajdn</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+            <sys_update_name>sys_ui_section_a6a1690f97133150208cbed0f053af99</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-12-28 12:29:04</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</application>
+        <file_path/>
+        <instance_id>74db336fdb0fe1d42f082a5913961901</instance_id>
+        <instance_name>dev175393</instance_name>
+        <name>sys_ui_section_a6a1690f97133150208cbed0f053af99</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="a6a1690f97133150208cbed0f053af99" sys_domain="global" table="x_1259253_recruiti_dnajdn" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>number</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2023-12-28 12:29:04</sys_created_on><sys_id>e2a1690f97133150208cbed0f053af9d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1259253_recruiti_dnajdn" sys_domain="global" view="Default view">a6a1690f97133150208cbed0f053af99</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-12-28 12:29:04</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_1259253_recruiti_dnajdn</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-12-28 12:29:04</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a6a1690f97133150208cbed0f053af99</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1259253_recruiti_dnajdn</sys_name><sys_overrides/><sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package><sys_policy/><sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope><sys_update_name>sys_ui_section_a6a1690f97133150208cbed0f053af99</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-12-28 12:29:04</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-2003371811</payload_hash>
+        <record_name>dnajdn</record_name>
+        <reverted_from/>
+        <source>96de98bf97037110208cbed0f053af0f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 12:29:04</sys_created_on>
+        <sys_id>e2a1690f97133150208cbed0f053af9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18cb06650360000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 12:29:04</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>aaa1690f64133150b82a344589e5029e</update_guid>
+        <update_guid_history>aaa1690f64133150b82a344589e5029e:-2003371811,eaa1690fcd133150e543d9d29584659c:1532776324</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 05:19:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>6c1db82b50394688a0bdc2df85e79004</sys_id>
+        <sys_metadata>a6a1690f97133150208cbed0f053af99</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1259253_recruiti_dnajdn</sys_name>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_parent display_value="">2f7129cf97133150208cbed0f053af1d</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_scope_delete display_value="">13b3b22bbb8e465a8f9281bbf0d1b324</sys_scope_delete>
+        <sys_update_name>sys_ui_section_a6a1690f97133150208cbed0f053af99</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_a6a1690f97133150208cbed0f053af99">e2a1690f97133150208cbed0f053af9f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 05:19:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

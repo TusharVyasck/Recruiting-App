@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1112fa9497dff110208cbed0f053af79" label="Review" max_length="40" name="x_1259253_recruiti_review" text_index="true" type="collection">
+        <element label="Assessment" mandatory="true" max_length="400" name="assessment" type="string"/>
+        <element label="Candidate Number" max_length="32" name="candidate_number" reference="x_1259253_recruiti_candidate" type="reference"/>
+        <element label="Job Application Number" max_length="32" name="job_application_number" reference="x_1259253_recruiti_job_application" reference_cascade_rule="cascade" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Review Number" max_length="40" name="number" type="string"/>
+        <element label="Position Title" max_length="32" name="position_title" read_only="true" reference="x_1259253_recruiti_positions" type="reference"/>
+        <element label="Rating" mandatory="true" max_length="40" name="rating" type="integer"/>
+        <index name="index">
+            <element name="candidate_number"/>
+        </index>
+        <index name="index2">
+            <element name="job_application_number"/>
+        </index>
+        <index name="index3">
+            <element name="position_title"/>
+        </index>
+    </element>
+</database>

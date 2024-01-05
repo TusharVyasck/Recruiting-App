@@ -1,0 +1,2054 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description>Once the salary is updated of an employee an email is sent to the employee and the sum of salary field of the employer gets updated with a task created in the employee table.</description>
+        <internal_name>salary_update_mail</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.email","label":"Trigger - Record Created or Updated➛Employee Record➛Email","reference":"","reference_display":"Email","type":"string","base_type":"string","parent_table_name":"x_1259253_recruiti_employee","column_name":"email"},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Employee Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1259253_recruiti_employee","column_name":"sys_id"},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Employee Record","reference":"x_1259253_recruiti_employee","reference_display":"Employee","type":"reference","base_type":"reference","attributes":{}},{"name":"f962b5e4-7304-4a82-9349-0971568dc26b.Record.number","label":"1 - Look Up Record➛Employer Record➛Employer Number","reference":"","reference_display":"Employer Number","type":"string","base_type":"string","parent_table_name":"x_1259253_recruiti_employer","column_name":"number"},{"name":"Created or Updated_1.current.number","label":"Trigger - Record Created or Updated➛Employee Record➛Employee Number","reference":"","reference_display":"Employee Number","type":"string","base_type":"string","parent_table_name":"x_1259253_recruiti_employee","column_name":"number"},{"name":"Created or Updated_1.current.employer_number.number","label":"Trigger - Record Created or Updated➛Employee Record➛Employer Number➛Employer Number","reference":"","reference_display":"Employer Number","type":"string","base_type":"string","parent_table_name":"x_1259253_recruiti_employer","column_name":"number"},{"name":"Created or Updated_1.current.employer_number","label":"Trigger - Record Created or Updated➛Employee Record➛Employer Number","reference":"x_1259253_recruiti_employer","reference_display":"Employer","type":"reference","base_type":"reference","parent_table_name":"x_1259253_recruiti_employee","column_name":"employer_number"},{"name":"f962b5e4-7304-4a82-9349-0971568dc26b.Record","label":"1 - Look Up Record➛Employer Record","reference":"x_1259253_recruiti_employer","reference_display":"Employer","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>a853a2d6979f3d10208cbed0f053afc4</master_snapshot>
+        <name>Salary update mail</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>8d53e2d6979f3d10208cbed0f053af88</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 06:58:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>75b2c612971f3d10208cbed0f053af18</sys_id>
+        <sys_mod_count>83</sys_mod_count>
+        <sys_name>Salary update mail</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name>sys_hub_flow_75b2c612971f3d10208cbed0f053af18</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:28</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=75b2c612971f3d10208cbed0f053af18"/>
+    <sys_variable_value action="delete_multiple" query="document_key=75b2c612971f3d10208cbed0f053af18"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1259253_recruiti_employee">salaryVALCHANGES<item endquery="false" field="salary" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8d53e2d6979f3d10208cbed0f053af88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 09:20:31</sys_updated_on>
+        <table>x_1259253_recruiti_employee</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>75b2c612971f3d10208cbed0f053af18</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:28</sys_created_on>
+        <sys_id>4d943f72975bfd10208cbed0f053af71</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:28</sys_updated_on>
+        <trigger display_value="">8d53e2d6979f3d10208cbed0f053af88</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=75b2c612971f3d10208cbed0f053af18^sys_idNOT IN4d943f72975bfd10208cbed0f053af71"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=75b2c612971f3d10208cbed0f053af18^sys_idNOT INd2d6c656971f3d10208cbed0f053af0f"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Salary update mail">75b2c612971f3d10208cbed0f053af18</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 07:16:04</sys_created_on>
+        <sys_id>d2d6c656971f3d10208cbed0f053af0f</sys_id>
+        <sys_mod_count>82</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:28</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d2d6c656971f3d10208cbed0f053af0f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>d2d6c656971f3d10208cbed0f053af0f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 07:16:05</sys_created_on>
+        <sys_id>16d6c656971f3d10208cbed0f053af10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 07:16:05</sys_updated_on>
+        <value>salaryVALCHANGES</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>d2d6c656971f3d10208cbed0f053af0f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 07:16:05</sys_created_on>
+        <sys_id>1ed6c656971f3d10208cbed0f053af10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 07:16:05</sys_updated_on>
+        <value>x_1259253_recruiti_employee</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>d2d6c656971f3d10208cbed0f053af0f</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:30:18</sys_created_on>
+        <sys_id>9895629a979f3d10208cbed0f053af02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 09:30:18</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=d2d6c656971f3d10208cbed0f053af0f"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=75b2c612971f3d10208cbed0f053af18"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=75b2c612971f3d10208cbed0f053af18^sys_idNOT INb5b2c612971f3d10208cbed0f053af1a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>75b2c612971f3d10208cbed0f053af18</id>
+        <name>Salary update mail</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 06:58:01</sys_created_on>
+        <sys_id>b5b2c612971f3d10208cbed0f053af1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 06:58:01</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b5b2c612971f3d10208cbed0f053af1a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=75b2c612971f3d10208cbed0f053af18^sys_idNOT IN4ad6c656971f3d10208cbed0f053af06,4ed60656971f3d10208cbed0f053af55,82d6c656971f3d10208cbed0f053af0a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Salary update mail">75b2c612971f3d10208cbed0f053af18</model>
+        <model_id>75b2c612971f3d10208cbed0f053af18</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_75b2c612971f3d10208cbed0f053af18</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 07:16:04</sys_created_on>
+        <sys_id>4ad6c656971f3d10208cbed0f053af06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 07:16:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Salary update mail">75b2c612971f3d10208cbed0f053af18</model>
+        <model_id>75b2c612971f3d10208cbed0f053af18</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_75b2c612971f3d10208cbed0f053af18</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 07:16:04</sys_created_on>
+        <sys_id>4ed60656971f3d10208cbed0f053af55</sys_id>
+        <sys_mod_count>51</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Salary update mail">75b2c612971f3d10208cbed0f053af18</model>
+        <model_id>75b2c612971f3d10208cbed0f053af18</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_75b2c612971f3d10208cbed0f053af18</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 07:16:04</sys_created_on>
+        <sys_id>82d6c656971f3d10208cbed0f053af0a</sys_id>
+        <sys_mod_count>51</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=75b2c612971f3d10208cbed0f053af18"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=75b2c612971f3d10208cbed0f053af18"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=75b2c612971f3d10208cbed0f053af18^sys_idNOT IN35843b72975bfd10208cbed0f053afe2,56d6c656971f3d10208cbed0f053af16,6c85d296975f3d10208cbed0f053af48,e885d296975f3d10208cbed0f053af41"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salary update mail">75b2c612971f3d10208cbed0f053af18</flow>
+        <order>7➛8</order>
+        <parent_ui_id>6b0ad240-c8ce-4251-80b3-f7f6eaef9629</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:14</sys_created_on>
+        <sys_id>35843b72975bfd10208cbed0f053afe2</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 05:13:59</sys_updated_on>
+        <ui_id>7f703a35-024e-45b5-84ee-b81647495df9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=35843b72975bfd10208cbed0f053afe2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>35843b72975bfd10208cbed0f053afe2</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:14</sys_created_on>
+        <sys_id>31843b72975bfd10208cbed0f053afe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:14</sys_updated_on>
+        <value>Congratulations! your Salary has been updated.</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>35843b72975bfd10208cbed0f053afe2</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:14</sys_created_on>
+        <sys_id>75843b72975bfd10208cbed0f053afe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:14</sys_updated_on>
+        <value>&lt;p&gt;Dear Employee,&lt;br /&gt;&lt;br /&gt;                            This is to inform you that your Salary has been updated .&lt;/p&gt;</value>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>35843b72975bfd10208cbed0f053afe2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:14</sys_created_on>
+        <sys_id>7d843b72975bfd10208cbed0f053afe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:14</sys_updated_on>
+        <value>x_1259253_recruiti_employee</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=35843b72975bfd10208cbed0f053afe2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>35843b72975bfd10208cbed0f053afe2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:14</sys_created_on>
+        <sys_id>b9843b72975bfd10208cbed0f053afe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>35843b72975bfd10208cbed0f053afe2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:14</sys_created_on>
+        <sys_id>f1843b72975bfd10208cbed0f053afe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>35843b72975bfd10208cbed0f053afe2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:14</sys_created_on>
+        <sys_id>f1843b72975bfd10208cbed0f053afe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created or Updated_1.current.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>35843b72975bfd10208cbed0f053afe2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:14</sys_created_on>
+        <sys_id>7d843b72975bfd10208cbed0f053afe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>35843b72975bfd10208cbed0f053afe2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:14</sys_created_on>
+        <sys_id>31843b72975bfd10208cbed0f053afe6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=35843b72975bfd10208cbed0f053afe2^sys_idNOT IN7d843b72975bfd10208cbed0f053afe3"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>record</input_name>
+        <instance>35843b72975bfd10208cbed0f053afe2</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"record":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:14</sys_created_on>
+        <sys_id>7d843b72975bfd10208cbed0f053afe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:14</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=35843b72975bfd10208cbed0f053afe2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salary update mail">75b2c612971f3d10208cbed0f053af18</flow>
+        <order>3➛4</order>
+        <parent_ui_id>359a925e-1e5f-4ed0-b798-3eed519938d2</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 07:16:05</sys_created_on>
+        <sys_id>56d6c656971f3d10208cbed0f053af16</sys_id>
+        <sys_mod_count>214</sys_mod_count>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 05:13:59</sys_updated_on>
+        <ui_id>6fa78668-d03a-48ee-b721-38565aecc7eb</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=56d6c656971f3d10208cbed0f053af16"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>56d6c656971f3d10208cbed0f053af16</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 07:16:05</sys_created_on>
+        <sys_id>16d6c656971f3d10208cbed0f053af19</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 12:08:11</sys_updated_on>
+        <value/>
+        <variable display_value="Field Values">273a6335531003003bf1d9109ec5876b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>56d6c656971f3d10208cbed0f053af16</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 07:16:05</sys_created_on>
+        <sys_id>52d6c656971f3d10208cbed0f053af19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 07:16:05</sys_updated_on>
+        <value>x_1259253_recruiti_salary_update</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>56d6c656971f3d10208cbed0f053af16</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 12:19:25</sys_created_on>
+        <sys_id>a14ccbda97537d10208cbed0f053affb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 12:22:45</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Wait">ff3a6335531003003bf1d9109ec58777</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=56d6c656971f3d10208cbed0f053af16"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>56d6c656971f3d10208cbed0f053af16</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 07:16:05</sys_created_on>
+        <sys_id>ded6c656971f3d10208cbed0f053af18</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-27 05:25:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>short_description=Salary updated Please check your Email okay^employee_number={{Created or Updated_1.current.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>56d6c656971f3d10208cbed0f053af16</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 07:16:05</sys_created_on>
+        <sys_id>d6d6c656971f3d10208cbed0f053af18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 07:16:05</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait</field>
+        <id>56d6c656971f3d10208cbed0f053af16</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 12:19:25</sys_created_on>
+        <sys_id>2d4ccbda97537d10208cbed0f053affa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 12:19:25</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=56d6c656971f3d10208cbed0f053af16^sys_idNOT INed4ccbda97537d10208cbed0f053aff9"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>field_values</input_name>
+        <instance>56d6c656971f3d10208cbed0f053af16</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"short_description":{"scriptActive":false,"savedValue":"Salary updated Please check your Email okay"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 12:19:25</sys_created_on>
+        <sys_id>ed4ccbda97537d10208cbed0f053aff9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 12:19:25</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=56d6c656971f3d10208cbed0f053af16"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salary update mail">75b2c612971f3d10208cbed0f053af18</flow>
+        <order>5➛6</order>
+        <parent_ui_id>73d03ab6-715d-4079-86a4-b84184ae0a43</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 08:20:08</sys_created_on>
+        <sys_id>6c85d296975f3d10208cbed0f053af48</sys_id>
+        <sys_mod_count>212</sys_mod_count>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 05:13:59</sys_updated_on>
+        <ui_id>8f9e9f31-e5ac-47d2-a5ee-a23663c16f53</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6c85d296975f3d10208cbed0f053af48"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6c85d296975f3d10208cbed0f053af48</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 08:20:08</sys_created_on>
+        <sys_id>2c85d296975f3d10208cbed0f053af70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 08:20:08</sys_updated_on>
+        <value>x_1259253_recruiti_employer</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6c85d296975f3d10208cbed0f053af48</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 08:20:08</sys_created_on>
+        <sys_id>6885d296975f3d10208cbed0f053af70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 08:20:08</sys_updated_on>
+        <value>sum_of_salaries=fd-scripted</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6c85d296975f3d10208cbed0f053af48"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>6c85d296975f3d10208cbed0f053af48</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 08:20:08</sys_created_on>
+        <sys_id>e485d296975f3d10208cbed0f053af70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 08:20:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{f962b5e4-7304-4a82-9349-0971568dc26b.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>6c85d296975f3d10208cbed0f053af48</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 08:20:08</sys_created_on>
+        <sys_id>6085d296975f3d10208cbed0f053af70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 08:20:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>6c85d296975f3d10208cbed0f053af48</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 08:20:08</sys_created_on>
+        <sys_id>2485d296975f3d10208cbed0f053af70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 08:20:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6c85d296975f3d10208cbed0f053af48^sys_idNOT INe085d296975f3d10208cbed0f053af6f"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>values</input_name>
+        <instance>6c85d296975f3d10208cbed0f053af48</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"sum_of_salaries":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar sum_of_salaries\u003dfd_data._1__look_up_record.record.sum_of_salaries;\nvar prevSalary\u003dNumber(fd_data.trigger.changed_fields[0].previous_value);\n// gs.info(prevSalary);\nvar currentSalary\u003dfd_data.trigger.current.salary;\nvar diff\u003dMath.abs(currentSalary-prevSalary);\nvar newsum\u003dsum_of_salaries+diff;\nreturn newsum;","savedValue":""}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 08:20:08</sys_created_on>
+        <sys_id>e085d296975f3d10208cbed0f053af6f</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-27 06:28:13</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6c85d296975f3d10208cbed0f053af48"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salary update mail">75b2c612971f3d10208cbed0f053af18</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 08:20:08</sys_created_on>
+        <sys_id>e885d296975f3d10208cbed0f053af41</sys_id>
+        <sys_mod_count>212</sys_mod_count>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 05:13:59</sys_updated_on>
+        <ui_id>f962b5e4-7304-4a82-9349-0971568dc26b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e885d296975f3d10208cbed0f053af41"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e885d296975f3d10208cbed0f053af41</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 08:20:08</sys_created_on>
+        <sys_id>6485d296975f3d10208cbed0f053af44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 08:20:08</sys_updated_on>
+        <value>x_1259253_recruiti_employer</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e885d296975f3d10208cbed0f053af41"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>e885d296975f3d10208cbed0f053af41</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 08:20:08</sys_created_on>
+        <sys_id>2c85d296975f3d10208cbed0f053af43</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 10:10:29</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>number={{Created or Updated_1.current.employer_number.number}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>e885d296975f3d10208cbed0f053af41</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 08:20:08</sys_created_on>
+        <sys_id>e085d296975f3d10208cbed0f053af44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 08:20:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e885d296975f3d10208cbed0f053af41"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e885d296975f3d10208cbed0f053af41"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=75b2c612971f3d10208cbed0f053af18"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=75b2c612971f3d10208cbed0f053af18^sys_idNOT INab5c6e5297df3d10208cbed0f053afd3,e75c6e5297df3d10208cbed0f053afcb,eb5c6e5297df3d10208cbed0f053afcf,ed843b72975bfd10208cbed0f053afd9"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">e35c6e5297df3d10208cbed0f053afd3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salary update mail">75b2c612971f3d10208cbed0f053af18</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Parallel Branch">a1168de173311300b61e66476bf6a7d0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>0eed2c3d-8efc-4be2-a0df-2ec9ff371a57</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 10:00:00</sys_created_on>
+        <sys_id>ab5c6e5297df3d10208cbed0f053afd3</sys_id>
+        <sys_mod_count>73</sys_mod_count>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:28</sys_updated_on>
+        <ui_id>73d03ab6-715d-4079-86a4-b84184ae0a43</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ab5c6e5297df3d10208cbed0f053afd3"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ab5c6e5297df3d10208cbed0f053afd3"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ab5c6e5297df3d10208cbed0f053afd3"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">675c6e5297df3d10208cbed0f053af5a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salary update mail">75b2c612971f3d10208cbed0f053af18</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Do the following in Parallel">5d31e5dedfe50300b61ecae83df26326</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 10:00:00</sys_created_on>
+        <sys_id>e75c6e5297df3d10208cbed0f053afcb</sys_id>
+        <sys_mod_count>73</sys_mod_count>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:28</sys_updated_on>
+        <ui_id>0eed2c3d-8efc-4be2-a0df-2ec9ff371a57</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e75c6e5297df3d10208cbed0f053afcb"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e75c6e5297df3d10208cbed0f053afcb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e75c6e5297df3d10208cbed0f053afcb"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">6f5c6e5297df3d10208cbed0f053afce</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salary update mail">75b2c612971f3d10208cbed0f053af18</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Parallel Branch">a1168de173311300b61e66476bf6a7d0</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>0eed2c3d-8efc-4be2-a0df-2ec9ff371a57</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 10:00:00</sys_created_on>
+        <sys_id>eb5c6e5297df3d10208cbed0f053afcf</sys_id>
+        <sys_mod_count>73</sys_mod_count>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:28</sys_updated_on>
+        <ui_id>359a925e-1e5f-4ed0-b798-3eed519938d2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=eb5c6e5297df3d10208cbed0f053afcf"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=eb5c6e5297df3d10208cbed0f053afcf"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=eb5c6e5297df3d10208cbed0f053afcf"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">25843b72975bfd10208cbed0f053afd9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salary update mail">75b2c612971f3d10208cbed0f053af18</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Parallel Branch">a1168de173311300b61e66476bf6a7d0</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>0eed2c3d-8efc-4be2-a0df-2ec9ff371a57</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:14</sys_created_on>
+        <sys_id>ed843b72975bfd10208cbed0f053afd9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:28</sys_updated_on>
+        <ui_id>6b0ad240-c8ce-4251-80b3-f7f6eaef9629</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ed843b72975bfd10208cbed0f053afd9"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ed843b72975bfd10208cbed0f053afd9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ed843b72975bfd10208cbed0f053afd9"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=75b2c612971f3d10208cbed0f053af18"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=75b2c612971f3d10208cbed0f053af18"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_75b2c612971f3d10208cbed0f053af18^sys_idNOT IN8ad6c656971f3d10208cbed0f053af05,c2d6c656971f3d10208cbed0f053af09,d6d6c656971f3d10208cbed0f053af0c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_75b2c612971f3d10208cbed0f053af18</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 07:16:04</sys_created_on>
+        <sys_id>8ad6c656971f3d10208cbed0f053af05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 07:16:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_75b2c612971f3d10208cbed0f053af18</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 07:16:04</sys_created_on>
+        <sys_id>c2d6c656971f3d10208cbed0f053af09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 07:16:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_75b2c612971f3d10208cbed0f053af18</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 07:16:04</sys_created_on>
+        <sys_id>d6d6c656971f3d10208cbed0f053af0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 07:16:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_75b2c612971f3d10208cbed0f053af18"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_75b2c612971f3d10208cbed0f053af18"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_75b2c612971f3d10208cbed0f053af18"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name/>
+        <description>Once the salary is updated of an employee an email is sent to the employee and the sum of salary field of the employer gets updated with a task created in the employee table.</description>
+        <internal_name>salary_update_mail</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.email","label":"Trigger - Record Created or Updated➛Employee Record➛Email","reference":"","reference_display":"Email","type":"string","base_type":"string","parent_table_name":"x_1259253_recruiti_employee","column_name":"email"},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛Employee Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1259253_recruiti_employee","column_name":"sys_id"},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Employee Record","reference":"x_1259253_recruiti_employee","reference_display":"Employee","type":"reference","base_type":"reference","attributes":{}},{"name":"f962b5e4-7304-4a82-9349-0971568dc26b.Record.number","label":"1 - Look Up Record➛Employer Record➛Employer Number","reference":"","reference_display":"Employer Number","type":"string","base_type":"string","parent_table_name":"x_1259253_recruiti_employer","column_name":"number"},{"name":"Created or Updated_1.current.number","label":"Trigger - Record Created or Updated➛Employee Record➛Employee Number","reference":"","reference_display":"Employee Number","type":"string","base_type":"string","parent_table_name":"x_1259253_recruiti_employee","column_name":"number"},{"name":"Created or Updated_1.current.employer_number.number","label":"Trigger - Record Created or Updated➛Employee Record➛Employer Number➛Employer Number","reference":"","reference_display":"Employer Number","type":"string","base_type":"string","parent_table_name":"x_1259253_recruiti_employer","column_name":"number"},{"name":"Created or Updated_1.current.employer_number","label":"Trigger - Record Created or Updated➛Employee Record➛Employer Number","reference":"x_1259253_recruiti_employer","reference_display":"Employer","type":"reference","base_type":"reference","parent_table_name":"x_1259253_recruiti_employee","column_name":"employer_number"},{"name":"f962b5e4-7304-4a82-9349-0971568dc26b.Record","label":"1 - Look Up Record➛Employer Record","reference":"x_1259253_recruiti_employer","reference_display":"Employer","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Salary update mail</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Salary update mail">75b2c612971f3d10208cbed0f053af18</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a853a2d6979f3d10208cbed0f053afc4</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:27</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=a853a2d6979f3d10208cbed0f053afc4"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a853a2d6979f3d10208cbed0f053afc4"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=a853a2d6979f3d10208cbed0f053afc4^sys_idNOT INfc53e2d6979f3d10208cbed0f053af2d"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Salary update mail">a853a2d6979f3d10208cbed0f053afc4</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>fc53e2d6979f3d10208cbed0f053af2d</sys_id>
+        <sys_mod_count>81</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:28</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fc53e2d6979f3d10208cbed0f053af2d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>fc53e2d6979f3d10208cbed0f053af2d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>3c53e2d6979f3d10208cbed0f053af2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 09:20:30</sys_updated_on>
+        <value>x_1259253_recruiti_employee</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>fc53e2d6979f3d10208cbed0f053af2d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>7853e2d6979f3d10208cbed0f053af2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 09:20:30</sys_updated_on>
+        <value>salaryVALCHANGES</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>fc53e2d6979f3d10208cbed0f053af2d</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:30:20</sys_created_on>
+        <sys_id>bc95629a979f3d10208cbed0f053afbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 09:30:20</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=fc53e2d6979f3d10208cbed0f053af2d"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=a853a2d6979f3d10208cbed0f053afc4"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=a853a2d6979f3d10208cbed0f053afc4^sys_idNOT INac53a2d6979f3d10208cbed0f053afc5"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>a853a2d6979f3d10208cbed0f053afc4</id>
+        <name>Salary update mail</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:29</sys_created_on>
+        <sys_id>ac53a2d6979f3d10208cbed0f053afc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 09:20:29</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=ac53a2d6979f3d10208cbed0f053afc5"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=a853a2d6979f3d10208cbed0f053afc4^sys_idNOT IN2453a2d6979f3d10208cbed0f053afc7,b853e2d6979f3d10208cbed0f053af05,f053a2d6979f3d10208cbed0f053affd"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Salary update mail">a853a2d6979f3d10208cbed0f053afc4</model>
+        <model_id>a853a2d6979f3d10208cbed0f053afc4</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_a853a2d6979f3d10208cbed0f053afc4</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:29</sys_created_on>
+        <sys_id>2453a2d6979f3d10208cbed0f053afc7</sys_id>
+        <sys_mod_count>53</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Salary update mail">a853a2d6979f3d10208cbed0f053afc4</model>
+        <model_id>a853a2d6979f3d10208cbed0f053afc4</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_a853a2d6979f3d10208cbed0f053afc4</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>b853e2d6979f3d10208cbed0f053af05</sys_id>
+        <sys_mod_count>53</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Salary update mail">a853a2d6979f3d10208cbed0f053afc4</model>
+        <model_id>a853a2d6979f3d10208cbed0f053afc4</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_a853a2d6979f3d10208cbed0f053afc4</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>f053a2d6979f3d10208cbed0f053affd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 09:26:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=a853a2d6979f3d10208cbed0f053afc4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a853a2d6979f3d10208cbed0f053afc4"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=a853a2d6979f3d10208cbed0f053afc4^sys_idNOT IN3453e2d6979f3d10208cbed0f053af23,b053e2d6979f3d10208cbed0f053af2b,b453e2d6979f3d10208cbed0f053af17,e894fb72975bfd10208cbed0f053afc5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salary update mail">a853a2d6979f3d10208cbed0f053afc4</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>3453e2d6979f3d10208cbed0f053af23</sys_id>
+        <sys_mod_count>110</sys_mod_count>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:26</sys_updated_on>
+        <ui_id>f962b5e4-7304-4a82-9349-0971568dc26b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3453e2d6979f3d10208cbed0f053af23"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3453e2d6979f3d10208cbed0f053af23</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>3453e2d6979f3d10208cbed0f053af25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 09:20:30</sys_updated_on>
+        <value>x_1259253_recruiti_employer</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3453e2d6979f3d10208cbed0f053af23"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>3453e2d6979f3d10208cbed0f053af23</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>fc53e2d6979f3d10208cbed0f053af24</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 10:10:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>number={{Created or Updated_1.current.employer_number.number}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>3453e2d6979f3d10208cbed0f053af23</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>b053e2d6979f3d10208cbed0f053af25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 09:20:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3453e2d6979f3d10208cbed0f053af23"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3453e2d6979f3d10208cbed0f053af23"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salary update mail">a853a2d6979f3d10208cbed0f053afc4</flow>
+        <order>5➛6</order>
+        <parent_ui_id>73d03ab6-715d-4079-86a4-b84184ae0a43</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>b053e2d6979f3d10208cbed0f053af2b</sys_id>
+        <sys_mod_count>110</sys_mod_count>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:26</sys_updated_on>
+        <ui_id>8f9e9f31-e5ac-47d2-a5ee-a23663c16f53</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b053e2d6979f3d10208cbed0f053af2b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b053e2d6979f3d10208cbed0f053af2b</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>7853e2d6979f3d10208cbed0f053af2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 09:20:30</sys_updated_on>
+        <value>x_1259253_recruiti_employer</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b053e2d6979f3d10208cbed0f053af2b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>b453e2d6979f3d10208cbed0f053af2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 09:20:30</sys_updated_on>
+        <value>sum_of_salaries=fd-scripted</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b053e2d6979f3d10208cbed0f053af2b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>b053e2d6979f3d10208cbed0f053af2b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>3453e2d6979f3d10208cbed0f053af2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 09:20:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{f962b5e4-7304-4a82-9349-0971568dc26b.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>b053e2d6979f3d10208cbed0f053af2b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>bc53e2d6979f3d10208cbed0f053af2c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 09:20:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>b053e2d6979f3d10208cbed0f053af2b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>7053e2d6979f3d10208cbed0f053af2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 09:20:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b053e2d6979f3d10208cbed0f053af2b^sys_idNOT INb053e2d6979f3d10208cbed0f053af2c"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>values</input_name>
+        <instance>b053e2d6979f3d10208cbed0f053af2b</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"sum_of_salaries":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar sum_of_salaries\u003dfd_data._1__look_up_record.record.sum_of_salaries;\nvar prevSalary\u003dNumber(fd_data.trigger.changed_fields[0].previous_value);\n// gs.info(prevSalary);\nvar currentSalary\u003dfd_data.trigger.current.salary;\nvar diff\u003dMath.abs(currentSalary-prevSalary);\nvar newsum\u003dsum_of_salaries+diff;\nreturn newsum;","savedValue":""}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>b053e2d6979f3d10208cbed0f053af2c</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-27 06:28:22</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b053e2d6979f3d10208cbed0f053af2b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salary update mail">a853a2d6979f3d10208cbed0f053afc4</flow>
+        <order>3➛4</order>
+        <parent_ui_id>359a925e-1e5f-4ed0-b798-3eed519938d2</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>b453e2d6979f3d10208cbed0f053af17</sys_id>
+        <sys_mod_count>110</sys_mod_count>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:26</sys_updated_on>
+        <ui_id>6fa78668-d03a-48ee-b721-38565aecc7eb</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b453e2d6979f3d10208cbed0f053af17"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b453e2d6979f3d10208cbed0f053af17</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>3853e2d6979f3d10208cbed0f053af19</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 09:20:30</sys_updated_on>
+        <value>x_1259253_recruiti_salary_update</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b453e2d6979f3d10208cbed0f053af17</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 12:19:34</sys_created_on>
+        <sys_id>f34c8fda97537d10208cbed0f053af9e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 12:22:53</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Wait">ff3a6335531003003bf1d9109ec58777</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b453e2d6979f3d10208cbed0f053af17</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>fc53e2d6979f3d10208cbed0f053af19</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 12:08:22</sys_updated_on>
+        <value/>
+        <variable display_value="Field Values">273a6335531003003bf1d9109ec5876b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b453e2d6979f3d10208cbed0f053af17"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>b453e2d6979f3d10208cbed0f053af17</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>b453e2d6979f3d10208cbed0f053af19</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-27 05:25:52</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>short_description=Salary updated Please check your Email okay^employee_number={{Created or Updated_1.current.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>b453e2d6979f3d10208cbed0f053af17</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>fc53e2d6979f3d10208cbed0f053af18</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 09:20:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait</field>
+        <id>b453e2d6979f3d10208cbed0f053af17</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 12:19:34</sys_created_on>
+        <sys_id>734c8fda97537d10208cbed0f053af9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 12:19:34</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b453e2d6979f3d10208cbed0f053af17^sys_idNOT IN3f4c8fda97537d10208cbed0f053af9d"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>field_values</input_name>
+        <instance>b453e2d6979f3d10208cbed0f053af17</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"short_description":{"scriptActive":false,"savedValue":"Salary updated Please check your Email okay"}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 12:19:34</sys_created_on>
+        <sys_id>3f4c8fda97537d10208cbed0f053af9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 12:19:34</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b453e2d6979f3d10208cbed0f053af17"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salary update mail">a853a2d6979f3d10208cbed0f053afc4</flow>
+        <order>7➛8</order>
+        <parent_ui_id>6b0ad240-c8ce-4251-80b3-f7f6eaef9629</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:26</sys_created_on>
+        <sys_id>e894fb72975bfd10208cbed0f053afc5</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:27</sys_updated_on>
+        <ui_id>7f703a35-024e-45b5-84ee-b81647495df9</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e894fb72975bfd10208cbed0f053afc5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e894fb72975bfd10208cbed0f053afc5</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:26</sys_created_on>
+        <sys_id>6c94fb72975bfd10208cbed0f053afc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:26</sys_updated_on>
+        <value>Congratulations! your Salary has been updated.</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e894fb72975bfd10208cbed0f053afc5</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:26</sys_created_on>
+        <sys_id>a894fb72975bfd10208cbed0f053afc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:26</sys_updated_on>
+        <value>x_1259253_recruiti_employee</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e894fb72975bfd10208cbed0f053afc5</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:26</sys_created_on>
+        <sys_id>e494fb72975bfd10208cbed0f053afc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:26</sys_updated_on>
+        <value>&lt;p&gt;Dear Employee,&lt;br /&gt;&lt;br /&gt;                            This is to inform you that your Salary has been updated .&lt;/p&gt;</value>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e894fb72975bfd10208cbed0f053afc5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>e894fb72975bfd10208cbed0f053afc5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:26</sys_created_on>
+        <sys_id>2c94fb72975bfd10208cbed0f053afc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>e894fb72975bfd10208cbed0f053afc5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:26</sys_created_on>
+        <sys_id>6494fb72975bfd10208cbed0f053afc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>e894fb72975bfd10208cbed0f053afc5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:26</sys_created_on>
+        <sys_id>6894fb72975bfd10208cbed0f053afc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created or Updated_1.current.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>e894fb72975bfd10208cbed0f053afc5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:26</sys_created_on>
+        <sys_id>ec94fb72975bfd10208cbed0f053afc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>e894fb72975bfd10208cbed0f053afc5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:26</sys_created_on>
+        <sys_id>a094fb72975bfd10208cbed0f053afc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e894fb72975bfd10208cbed0f053afc5^sys_idNOT INac94fb72975bfd10208cbed0f053afc6"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>record</input_name>
+        <instance>e894fb72975bfd10208cbed0f053afc5</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"record":{"scriptActive":false}}</script>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:26</sys_created_on>
+        <sys_id>ac94fb72975bfd10208cbed0f053afc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:26</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e894fb72975bfd10208cbed0f053afc5"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=a853a2d6979f3d10208cbed0f053afc4"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=a853a2d6979f3d10208cbed0f053afc4^sys_idNOT IN6494fb72975bfd10208cbed0f053afd7,6e6c229297df3d10208cbed0f053afdc,aa6c229297df3d10208cbed0f053afd9,ea6c229297df3d10208cbed0f053afdf"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">25843b72975bfd10208cbed0f053afd9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salary update mail">a853a2d6979f3d10208cbed0f053afc4</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Parallel Branch">a1168de173311300b61e66476bf6a7d0</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>0eed2c3d-8efc-4be2-a0df-2ec9ff371a57</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-28 04:32:26</sys_created_on>
+        <sys_id>6494fb72975bfd10208cbed0f053afd7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:26</sys_updated_on>
+        <ui_id>6b0ad240-c8ce-4251-80b3-f7f6eaef9629</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6494fb72975bfd10208cbed0f053afd7"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6494fb72975bfd10208cbed0f053afd7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6494fb72975bfd10208cbed0f053afd7"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">6f5c6e5297df3d10208cbed0f053afce</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salary update mail">a853a2d6979f3d10208cbed0f053afc4</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Parallel Branch">a1168de173311300b61e66476bf6a7d0</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>0eed2c3d-8efc-4be2-a0df-2ec9ff371a57</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 10:00:13</sys_created_on>
+        <sys_id>6e6c229297df3d10208cbed0f053afdc</sys_id>
+        <sys_mod_count>51</sys_mod_count>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:26</sys_updated_on>
+        <ui_id>359a925e-1e5f-4ed0-b798-3eed519938d2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6e6c229297df3d10208cbed0f053afdc"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6e6c229297df3d10208cbed0f053afdc"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6e6c229297df3d10208cbed0f053afdc"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">675c6e5297df3d10208cbed0f053af5a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salary update mail">a853a2d6979f3d10208cbed0f053afc4</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Do the following in Parallel">5d31e5dedfe50300b61ecae83df26326</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 10:00:13</sys_created_on>
+        <sys_id>aa6c229297df3d10208cbed0f053afd9</sys_id>
+        <sys_mod_count>51</sys_mod_count>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:26</sys_updated_on>
+        <ui_id>0eed2c3d-8efc-4be2-a0df-2ec9ff371a57</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=aa6c229297df3d10208cbed0f053afd9"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=aa6c229297df3d10208cbed0f053afd9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=aa6c229297df3d10208cbed0f053afd9"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">e35c6e5297df3d10208cbed0f053afd3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salary update mail">a853a2d6979f3d10208cbed0f053afc4</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Parallel Branch">a1168de173311300b61e66476bf6a7d0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>0eed2c3d-8efc-4be2-a0df-2ec9ff371a57</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 10:00:13</sys_created_on>
+        <sys_id>ea6c229297df3d10208cbed0f053afdf</sys_id>
+        <sys_mod_count>51</sys_mod_count>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:26</sys_updated_on>
+        <ui_id>73d03ab6-715d-4079-86a4-b84184ae0a43</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=ea6c229297df3d10208cbed0f053afdf"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=ea6c229297df3d10208cbed0f053afdf"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ea6c229297df3d10208cbed0f053afdf"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=a853a2d6979f3d10208cbed0f053afc4"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=a853a2d6979f3d10208cbed0f053afc4"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_a853a2d6979f3d10208cbed0f053afc4^sys_idNOT IN7053e2d6979f3d10208cbed0f053af02,b453e2d6979f3d10208cbed0f053af0a,b853a2d6979f3d10208cbed0f053aff9"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a853a2d6979f3d10208cbed0f053afc4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>7053e2d6979f3d10208cbed0f053af02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 09:20:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a853a2d6979f3d10208cbed0f053afc4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>b453e2d6979f3d10208cbed0f053af0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 09:20:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a853a2d6979f3d10208cbed0f053afc4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:30</sys_created_on>
+        <sys_id>b853a2d6979f3d10208cbed0f053aff9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-26 09:20:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_a853a2d6979f3d10208cbed0f053afc4"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_a853a2d6979f3d10208cbed0f053afc4"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_a853a2d6979f3d10208cbed0f053afc4"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>75b2c612971f3d10208cbed0f053af18</sys_id>
+        <latest_snapshot>a853a2d6979f3d10208cbed0f053afc4</latest_snapshot>
+        <compiler_build>glide-utah-12-21-2022__patch7a-09-28-2023_10-10-2023_1258.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=75b2c612971f3d10208cbed0f053af18^sys_idNOT INcd53e2d6979f3d10208cbed0f053af8a"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"cd53e2d6979f3d10208cbed0f053af8a","name":"plan","plan_signature":null}}</plan>
+        <plan_id>75b2c612971f3d10208cbed0f053af18</plan_id>
+        <snapshot>891e3f3e975bfd10208cbed0f053af64</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-26 09:20:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cd53e2d6979f3d10208cbed0f053af8a</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-28 04:32:28</sys_updated_on>
+        <trigger display_value="">8d53e2d6979f3d10208cbed0f053af88</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=75b2c612971f3d10208cbed0f053af18"/>
+</record_update>

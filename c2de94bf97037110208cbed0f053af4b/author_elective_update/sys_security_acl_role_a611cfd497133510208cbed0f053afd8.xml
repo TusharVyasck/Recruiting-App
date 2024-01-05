@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-20 06:22:45</sys_created_on>
+        <sys_id>a611cfd497133510208cbed0f053afd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1259253_recruiti_review2.x_1259253_recruiti.user</sys_name>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_security_acl display_value="x_1259253_recruiti_review2">5a11cfd497133510208cbed0f053afd2</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_a611cfd497133510208cbed0f053afd8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-20 06:22:45</sys_updated_on>
+        <sys_user_role display_value="x_1259253_recruiti.user" name="x_1259253_recruiti.user">8d1d2a40975fb110208cbed0f053afbe</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</application>
+        <file_path/>
+        <instance_id>74db336fdb0fe1d42f082a5913961901</instance_id>
+        <instance_name>dev175393</instance_name>
+        <name>sys_security_acl_role_a611cfd497133510208cbed0f053afd8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-12-20 06:22:45</sys_created_on><sys_id>a611cfd497133510208cbed0f053afd8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1259253_recruiti_review2.x_1259253_recruiti.user</sys_name><sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package><sys_policy/><sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope><sys_security_acl display_value="x_1259253_recruiti_review2">5a11cfd497133510208cbed0f053afd2</sys_security_acl><sys_update_name>sys_security_acl_role_a611cfd497133510208cbed0f053afd8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-12-20 06:22:45</sys_updated_on><sys_user_role display_value="x_1259253_recruiti.user" name="x_1259253_recruiti.user">8d1d2a40975fb110208cbed0f053afbe</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1864416252</payload_hash>
+        <record_name>x_1259253_recruiti_review2.x_1259253_recruiti.user</record_name>
+        <reverted_from/>
+        <source>96de98bf97037110208cbed0f053af0f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-20 06:22:45</sys_created_on>
+        <sys_id>a211cfd497133510208cbed0f053aff6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c85e40fe60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-20 06:22:45</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>a611cfd4f4133510bd91bc3bff575af5</update_guid>
+        <update_guid_history>a611cfd4f4133510bd91bc3bff575af5:-1864416252</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1259253_recruiti_review2.x_1259253_recruiti.user">2261871897133510208cbed0f053afd7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-20 06:24:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>088bf1eb6107494680645f0109cca769</sys_id>
+        <sys_metadata>a611cfd497133510208cbed0f053afd8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1259253_recruiti_review2.x_1259253_recruiti.user</sys_name>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_parent display_value="">5a11cfd497133510208cbed0f053afd2</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_scope_delete display_value="">13b3b22bbb8e465a8f9281bbf0d1b324</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_a611cfd497133510208cbed0f053afd8</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_a611cfd497133510208cbed0f053afd8">a211cfd497133510208cbed0f053aff6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-20 06:24:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

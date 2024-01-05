@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="22bef9da97db3d10208cbed0f053af15" extends="task" label="Salary update" max_length="40" name="x_1259253_recruiti_salary_update" text_index="true" type="collection">
+        <element label="Employee Number" max_length="32" name="employee_number" reference="x_1259253_recruiti_employee" type="reference"/>
+    </element>
+</database>

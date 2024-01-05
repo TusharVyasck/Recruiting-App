@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="DELETE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_1259253_recruiti.Application user</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>Application user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 05:00:15</sys_created_on>
+        <sys_id>a10789ed97a3b910208cbed0f053af6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1259253_recruiti.Application user</sys_name>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_update_name>sys_user_role_a10789ed97a3b910208cbed0f053af6a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 05:00:15</sys_updated_on>
+    </sys_user_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</application>
+        <file_path/>
+        <instance_id>74db336fdb0fe1d42f082a5913961901</instance_id>
+        <instance_name>dev175393</instance_name>
+        <name>sys_user_role_a10789ed97a3b910208cbed0f053af6a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role"><sys_user_role action="INSERT_OR_UPDATE"><assignable_by/><can_delegate>true</can_delegate><description/><elevated_privilege>false</elevated_privilege><grantable>true</grantable><includes_roles/><name>x_1259253_recruiti.Application user</name><requires_subscription>-1</requires_subscription><scoped_admin>false</scoped_admin><suffix>Application user</suffix><sys_class_name>sys_user_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-01-05 05:00:15</sys_created_on><sys_id>a10789ed97a3b910208cbed0f053af6a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1259253_recruiti.Application user</sys_name><sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package><sys_policy/><sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope><sys_update_name>sys_user_role_a10789ed97a3b910208cbed0f053af6a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-01-05 05:00:15</sys_updated_on></sys_user_role></record_update>]]></payload>
+        <payload_hash>1331031043</payload_hash>
+        <record_name>x_1259253_recruiti.Application user</record_name>
+        <reverted_from/>
+        <source>96de98bf97037110208cbed0f053af0f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 05:00:15</sys_created_on>
+        <sys_id>5aa70d6197e3b910208cbed0f053aff9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18cd7fe49da0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 05:00:15</sys_updated_on>
+        <type>Role</type>
+        <update_guid>5ea70d61b0e3b9102131cbdfa7fa03f8</update_guid>
+        <update_guid_history>5ea70d61b0e3b9102131cbdfa7fa03f8:1331031043</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1259253_recruiti.Application user">6dff4de997e3b910208cbed0f053af6b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-01-05 05:36:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role">sys_user_role</sys_db_object>
+        <sys_id>1f5b994fd54d426d97a4090493c90b39</sys_id>
+        <sys_metadata>a10789ed97a3b910208cbed0f053af6a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1259253_recruiti.Application user</sys_name>
+        <sys_package display_value="Recruiting App" source="x_1259253_recruiti">c2de94bf97037110208cbed0f053af4b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Recruiting App">c2de94bf97037110208cbed0f053af4b</sys_scope>
+        <sys_scope_delete display_value="">13b3b22bbb8e465a8f9281bbf0d1b324</sys_scope_delete>
+        <sys_update_name>sys_user_role_a10789ed97a3b910208cbed0f053af6a</sys_update_name>
+        <sys_update_version display_value="sys_user_role_a10789ed97a3b910208cbed0f053af6a">5aa70d6197e3b910208cbed0f053aff9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-01-05 05:36:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
